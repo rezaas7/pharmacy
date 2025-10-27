@@ -50,7 +50,7 @@ tfoot .total-row{background:#fbfdff;font-weight:800;font-size:15px;color:#062037
 tr.zero{opacity:0.6}
 .pharmacy-print{display:none}
 
-/* print */
+/* print - base adjustments */
 @media print{
   body{background:#fff;padding:8mm}
   .controls,.note,.save-row,.no-print,.pharmacy-input{display:none !important}
@@ -83,4 +83,87 @@ tr.zero{opacity:0.6}
 @media (max-width:640px) {
   .label { display:inline-block; }
   .value { display:inline-block; }
+}
+
+/* --- Print-specific additions: force landscape and hide qty controls in print --- */
+
+/* Force print to landscape and set sensible page margin */
+@page {
+  size: landscape;
+  margin: 8mm;
+}
+
+/* Ensure print color fidelity and layout adjustments for printing */
+@media print {
+  /* ensure overall print layout uses full width and neutral background */
+  body {
+    background: #fff !important;
+    padding: 8mm !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* hide interactive controls used for quantities (buttons and numeric inputs) */
+  button.qty,
+  button.qty.btn-inline,
+  .qty-input,
+  .qty-wrap > .qty,
+  input[type="number"] {
+    display: none !important;
+  }
+
+  /* hide any inline live value shown during interaction */
+  .qty-live-value {
+    display: none !important;
+  }
+
+  /* show the print-only quantity span if present */
+  .qty-print-value {
+    display: inline !important;
+  }
+
+  /* keep pharmacy print header visible */
+  .pharmacy-print {
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+  }
+
+  /* keep other no-print elements hidden */
+  .no-print {
+    display: none !important;
+  }
+
+  /* remove shadows, rounded corners for clean print */
+  .card {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* ensure rows with zero class remain hidden as before */
+  tr.zero {
+    display: none !important;
+  }
+
+  /* table borders for clear printed grid */
+  table, th, td {
+    border: 1px solid #999 !important;
+  }
+}
+
+/* Keep mobile stacked layout intact during print when viewport is narrow
+   but still force landscape paper orientation; this avoids layout collapse
+   on devices that respect @media print but maintain mobile stacking */
+@media print and (max-width:640px) {
+  table, thead, tbody, th, td, tr { display:block; width:100%; }
+  thead { display:none; }
+  tbody tr { margin:0 0 8px 0; padding:8px; border-radius:0; background:transparent; box-shadow:none; border:1px solid #ddd; }
+  tbody tr td { display:flex; justify-content:space-between; align-items:center; padding:6px 8px; border:0; border-bottom:1px dashed #eaeaea; font-size:12px; }
+  tbody tr td:last-child { border-bottom:0; }
+  .label { display:inline-block; color:var(--muted); font-size:12px; margin-left:8px; white-space:nowrap; }
+  .value { display:inline-block; font-weight:700; color:#102033; text-align:left; }
+  input[type="number"], button.qty { display:none !important; }
+  .qty-print-value { display:inline !important; }
 }
