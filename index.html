@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <title>فاکتور داروخانه — رخسار سلامت پارس</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="pharmacy-style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="head">
+        <div class="brand">
+          <div class="logo">ر</div>
+          <div>
+            <h1>رخسار سلامت پارس</h1>
+            <p class="muted">فهرست کالاها و فاکتور داروخانه </p>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div class="top-row">
+            <div class="pharmacy-input no-print" aria-label="نام داروخانه">
+              <label for="pharmacyName">نام داروخانه</label>
+              <input id="pharmacyName" type="text" placeholder="مثال: داروخانه مرکزی" />
+            </div>
+            <div id="pharmacyPrintArea" class="pharmacy-print" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls no-print" style="margin-bottom:6px">
+        <div class="search">
+          <input id="searchBox" type="text" placeholder="جستجو: فوم، سرم، نوکس..." />
+        </div>
+        <button id="searchBtn" class="btn btn-ghost">جستجو</button>
+        <button id="resetBtn" class="btn btn-ghost">بازنشانی (نمایش همه)</button>
+        <button id="printBtn" class="btn btn-primary">پیش‌نمایش و ذخیره به PDF</button>
+      </div>
+
+      <div class="table-wrap" role="table">
+        <table>
+          <thead>
+            <tr>
+              <th>نام محصول</th>
+              <th>قیمت داروخانه (ریال)</th>
+              <th>قیمت مصرف‌کننده (ریال)</th>
+              <th>تعداد</th>
+              <th>جمع کل (ریال)</th>
+            </tr>
+          </thead>
+          <tbody id="productBody"></tbody>
+          <tfoot>
+            <tr class="total-row">
+              <td colspan="4">جمع کل نهایی (ریال)</td>
+              <td id="grandTotal">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="note-row">
+        <p class="note no-print">برنامه نویس : رضا آسال</p>
+        <div class="save-row no-print">
+          <button id="fixedSaveBtn" class="save-btn">ذخیره به PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="pharmacy-script.js"></script>
+</body>
+</html>
