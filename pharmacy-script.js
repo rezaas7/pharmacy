@@ -1,18 +1,18 @@
 // pharmacy-script.js
 document.addEventListener('DOMContentLoaded', () => {
   const products = [
-    { name: "صابون زیر وباکتر ضد جوش TCC", pharmacyPrice: 1148000, consumerPrice: 1320000 },
-    { name: "صابون زیرو باکتر گیاهی ضد جوش تی تری / لیمو", pharmacyPrice: 1106000, consumerPrice: 1272000 },
-    { name: "صابون ضد قارچ گوگرد ۹.۵ درصد", pharmacyPrice: 918000, consumerPrice: 1056000 },
-    { name: "صابون لایه بردار سالیسیلیک اسید / جلبک دریایی", pharmacyPrice: 1127000, consumerPrice: 1296000 },
-    { name: "صابون هیبریدی ضد قارچ / ضد جوش / لایه بردار", pharmacyPrice: 1325000, consumerPrice: 1524000 },
-    { name: "فوم تخصصی پوستهای چرب و جوشدار / درمان جوش", pharmacyPrice: 2760000, consumerPrice: 1380000 },
-    { name: "فوم گریپ فروت و ویتامین C فاقد سولفات / ملایم نرمال تا چرب", pharmacyPrice: 2400000, consumerPrice: 2770000 },
-    { name: "فوم تی تری لیمو زیر وباکتر فاقد سولفات / آنتی شاین", pharmacyPrice: 2460000, consumerPrice: 2830000 },
-    { name: "فوم زردچوبه کوجیک اسید / روشن کننده پوست های چرب", pharmacyPrice: 2565000, consumerPrice: 2950000 },
-    { name: "میسلارواتر گریپ فروت و ویتامین C", pharmacyPrice: 2610000, consumerPrice: 3000000 },
-    { name: "BB کرم مناسب پوست های چرب و جوشدار / بژ روشن / اکتی آکنه", pharmacyPrice: 4210000, consumerPrice: 4850000 },
-    { name: "BB کرم مناسب پوست های چرب و جوشدار / بژ طبیعی / اکتی آکنه", pharmacyPrice: 4210000, consumerPrice: 4850000 },
+    { name: "صابون زیر وباکتر ضد جوش TCC", pharmacyPrice: 2390000, consumerPrice: 2750000 },
+    { name: "صابون زیرو باکتر گیاهی ضد جوش تی تری / لیمو", pharmacyPrice: 2430000, consumerPrice: 2800000 },
+    { name: "صابون ضد قارچ گوگرد ۹.۵ درصد", pharmacyPrice: 2130000, consumerPrice: 2450000 },
+    { name: "صابون لایه بردار سالیسیلیک اسید / جلبک دریایی", pharmacyPrice: 2340000, consumerPrice: 2700000 },
+    { name: "صابون هیبریدی ضد قارچ / ضد جوش / لایه بردار", pharmacyPrice: 2560000, consumerPrice: 2950000 },
+    { name: "فوم تخصصی پوستهای چرب و جوشدار / درمان جوش", pharmacyPrice: 3480000, consumerPrice: 4000000 },
+    { name: "فوم گریپ فروت و ویتامین C فاقد سولفات / ملایم نرمال تا چرب", pharmacyPrice: 3000000, consumerPrice: 3460000 },
+    { name: "فوم تی تری لیمو زیر وباکتر فاقد سولفات / آنتی شاین", pharmacyPrice: 3070000, consumerPrice: 35300000 },
+    { name: "فوم زردچوبه کوجیک اسید / روشن کننده پوست های چرب", pharmacyPrice: 3200000, consumerPrice: 3680000 },
+    { name: "میسلارواتر گریپ فروت و ویتامین C", pharmacyPrice: 3260000, consumerPrice: 3750000 },
+    { name: "BB کرم مناسب پوست های چرب و جوشدار / بژ روشن / اکتی آکنه", pharmacyPrice: 5220000, consumerPrice: 6000000 },
+    { name: "BB کرم مناسب پوست های چرب و جوشدار / بژ طبیعی / اکتی آکنه", pharmacyPrice: 5220000, consumerPrice: 6000000 },
     { name: "ژل کرم آبرسان مناسب پوستهای چرب / هیدر آکنه", pharmacyPrice: 2870000, consumerPrice: 3300000 },
     { name: "ژل ضد جوش اورژانسی / Acne sos", pharmacyPrice: 2600000, consumerPrice: 3000000 },
     { name: "اسپری ضد جوش بدن / Acne Spray", pharmacyPrice: 3390000, consumerPrice: 3900000 },
@@ -285,3 +285,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // initial render
   renderTable();
 });
+
