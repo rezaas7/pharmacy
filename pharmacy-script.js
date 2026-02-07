@@ -13,17 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: "میسلارواتر گریپ فروت و ویتامین C", pharmacyPrice: 3260000, consumerPrice: 3750000 },
     { name: "BB کرم مناسب پوست های چرب و جوشدار / بژ روشن / اکتی آکنه", pharmacyPrice: 5220000, consumerPrice: 6000000 },
     { name: "BB کرم مناسب پوست های چرب و جوشدار / بژ طبیعی / اکتی آکنه", pharmacyPrice: 5220000, consumerPrice: 6000000 },
-    { name: "ژل کرم آبرسان مناسب پوستهای چرب / هیدر آکنه", pharmacyPrice: 2870000, consumerPrice: 3300000 },
-    { name: "ژل ضد جوش اورژانسی / Acne sos", pharmacyPrice: 2600000, consumerPrice: 3000000 },
-    { name: "اسپری ضد جوش بدن / Acne Spray", pharmacyPrice: 3390000, consumerPrice: 3900000 },
-    { name: "کرم ضد جوش آکنه اتک / Acne Attack", pharmacyPrice: 3300000, consumerPrice: 3800000 },
-    { name: "ژل اسکراب نوآکنه / Acne Scrub", pharmacyPrice: 3260000, consumerPrice: 3750000 },
-    { name: "فوم براش دار تی تری / لیمو زیرو باکتر فاقد سولفات / آنتی شاین", pharmacyPrice: 3110000, consumerPrice: 3580000 },
-    { name: "فوم براش دار گریپ فروت و ویتامین C فاقد سولفات / ملایم نرمال تا چرب", pharmacyPrice: 3060000, consumerPrice: 3520000 },
-    { name: "فوم براش دار زردچوبه کوجیک اسید / روشن کننده پوستهای چرب", pharmacyPrice: 3210000, consumerPrice: 3700000 },
-    { name: "سرم نیاسینامید ۱۰ / Niaciserum", pharmacyPrice: 5650000, consumerPrice: 6500000 },
-    { name: "سرم سالسیلیک اسید / Salitwo", pharmacyPrice: 5040000, consumerPrice: 5800000 },
-    { name: "نوکس پاور آیس هات ژل", pharmacyPrice: 1720000, consumerPrice: 1980000 },
+    { name: "ژل کرم آبرسان مناسب پوستهای چرب / هیدر آکنه", pharmacyPrice: 3580000, consumerPrice: 4120000 },
+    { name: "ژل ضد جوش اورژانسی / Acne sos", pharmacyPrice: 3260000, consumerPrice: 3750000 },
+    { name: "اسپری ضد جوش بدن / Acne Spray", pharmacyPrice: 4230000, consumerPrice: 4870000 },
+    { name: "کرم ضد جوش آکنه اتک / Acne Attack", pharmacyPrice: 4130000, consumerPrice: 4750000 },
+    { name: "ژل اسکراب نوآکنه / Acne Scrub", pharmacyPrice: 4080000, consumerPrice: 4700000 },
+    { name: "فوم براش دار تی تری / لیمو زیرو باکتر فاقد سولفات / آنتی شاین", pharmacyPrice: 3880000, consumerPrice: 4470000 },
+    { name: "فوم براش دار گریپ فروت و ویتامین C فاقد سولفات / ملایم نرمال تا چرب", pharmacyPrice: 3820000, consumerPrice: 4400000 },
+    { name: "فوم براش دار زردچوبه کوجیک اسید / روشن کننده پوستهای چرب", pharmacyPrice: 4020000, consumerPrice: 4620000 },
+    { name: "سرم نیاسینامید ۱۰ / Niaciserum", pharmacyPrice: 7060000, consumerPrice: 8120000 },
+    { name: "سرم سالسیلیک اسید / Salitwo", pharmacyPrice: 6300000, consumerPrice: 7250000 },
+    { name: "نوکس پاور آیس هات ژل", pharmacyPrice: 1980000, consumerPrice: 2280000 },
     { name: "نوکس فریزر ژل آیس", pharmacyPrice: 1600000, consumerPrice: 1850000 },
     { name: "نکسو کرم ضد کبودی، ضد التهاب، ضد درد", pharmacyPrice: 3040000, consumerPrice: 3500000 },
     { name: "کرم موبر بدن پوست نرمال", pharmacyPrice: 2300000, consumerPrice: 2650000 },
@@ -285,4 +285,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // initial render
   renderTable();
 });
+
 
